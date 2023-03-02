@@ -48,10 +48,29 @@ int main() {
     printf("%d\n ", luckyNumber[2]);
 
     greetings("SWE", 4);
-    printf("The answer of this cubing is %f", cubing(4));
+    printf("The answer of this cubing is %f\n", cubing(4));
+
+    //switch
+    char grades = 'C';
+
+    switch(grades) {
+        case 'A':
+        printf(" Goodd bingits\n");
+        break;
+        case 'B':
+        printf("Bisalah\n");
+        break;
+        case 'C':
+        printf("No no\n");
+        break;
+        default: 
+        printf("Invalid\n");
+    }
+
    return 0;
 }
 
+//return type
 double cubing (double num){
     return num * num * num;
 }
