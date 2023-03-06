@@ -2,8 +2,9 @@
 //./out
 
 #include <stdio.h>
-#include <stdlib.h>
+#include <string.h>
 #include <math.h>
+
 
 //function
 //void is a function that isnt return any type of value/information
@@ -11,6 +12,14 @@ void greetings(char major[], int level){
     printf("Hello im majoring in %s , and on %d levels\n", major,level);
 }
 double cubing (double num);
+
+//struct
+struct Student{
+    char name[50];
+    char major[50];
+    int age;
+    double gpa;
+};
 
 int main() {
    printf("Hellooo!\n");
@@ -65,15 +74,31 @@ int main() {
         break;
         default: 
         printf("Invalid\n");
-    }
+    };
 
+    //structs
+    struct Student student1;
+    student1.age = 21;
+    student1.gpa = 3.33;
+    strcpy(student1.name, "Budi Hartono");
+    strcpy(student1.major, "Software Engineering");
+
+    printf("%s\n", student1.name);
+
+//while loop
+    int index = 1;
+    while(index <= 5){
+        printf("%d\n", index);
+        index++;
+    }
+    //when its comes to do while, it will return the value although the condition is not fulfilled
    return 0;
-}
+};
 
 //return type
 double cubing (double num){
     return num * num * num;
-}
+};
 
 
 
