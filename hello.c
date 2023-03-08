@@ -101,22 +101,23 @@ int main() {
         printf("%d\n", luckyNumbers[i]);
     };
 
+    printf("=========2D Dimension Array=========\n");
     // 2 Dimension Array
-    int arr[3][2]= { //first => element, sec = index
+    int arr[3][2]= { //first => rows index, sec = column index
         {1,2},
         {3,4},
         {5,6}
 
     };
-        printf("%d\n",arr[0][1]); //expected : 2
+        printf("%d\n",arr[1][1]); //expected : 4
 
     //nested loop
 
     printf("=========nested loop=========\n");
     int x, y;
-    for(x = 0; x < 3; x++){
-        for(y = 0; y < 1; y++){
-            printf("%d",arr[x][y]);
+    for(x = 0; x < 3; x++){ //iterates rows of array
+        for(y = 0; y < 2; y++){ //iterares columns of array
+            printf("%d,",arr[x][y]);
         }
         printf("\n");
     }
