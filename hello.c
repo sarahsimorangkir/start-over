@@ -108,8 +108,18 @@ int main() {
         {5,6}
 
     };
-        printf("%d\n",arr[0][1]); 
+        printf("%d\n",arr[0][1]); //expected : 2
 
+    //nested loop
+
+    printf("=========nested loop=========\n");
+    int x, y;
+    for(x = 0; x < 3; x++){
+        for(y = 0; y < 1; y++){
+            printf("%d",arr[x][y]);
+        }
+        printf("\n");
+    }
    return 0;
 };
 
