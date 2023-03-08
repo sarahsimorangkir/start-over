@@ -92,6 +92,15 @@ int main() {
         index++;
     }
     //when its comes to do while, it will return the value although the condition is not fulfilled
+
+    //for loop
+    printf("=========for loop=========\n");
+    int i;
+    int luckyNumbers[] = {1,14,6,8,3,5};
+    for (i=0; i<5; i++){
+        printf("%d\n", luckyNumbers[i]);
+    }
+
    return 0;
 };
 
