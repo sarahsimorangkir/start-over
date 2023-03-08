@@ -99,7 +99,16 @@ int main() {
     int luckyNumbers[] = {1,14,6,8,3,5};
     for (i=0; i<5; i++){
         printf("%d\n", luckyNumbers[i]);
-    }
+    };
+
+    // 2 Dimension Array
+    int arr[3][2]= { //first => element, sec = index
+        {1,2},
+        {3,4},
+        {5,6}
+
+    };
+        printf("%d\n",arr[0][1]); 
 
    return 0;
 };
