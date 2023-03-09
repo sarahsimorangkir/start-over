@@ -125,11 +125,27 @@ int main() {
     printf("first: %p\nsecond: %p\n", &x, &y);
 
     int height = 21;
-    int * pHeight = &height; 
+    int *pHeight = &height; 
     double temperature = 21.5;
-    double * pTemperature = &temperature; 
+    double *pTemperature = &temperature; 
 
     printf("%p\n%p\n", &height, &*pTemperature);
+
+    //& = print memory adress, * = print value of the memory address
+
+    //dereference pointers
+    printf("%d\n", *pHeight);
+
+    //writing files
+    char line[255];
+    FILE *fpointer = fopen("writeFiles.txt", "r"); // "w" for writing files, "a" for add, "r" for read
+    //the file can be anything like html,json, etc
+    // fprintf(fpointer, "\nTest add some words");
+
+    //read file
+    fgets(line,255, fpointer); //print the first line in the file
+    printf("%s", line);
+    fclose(fpointer);
 
    return 0;
 };
