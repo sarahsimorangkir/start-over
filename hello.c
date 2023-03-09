@@ -121,6 +121,16 @@ int main() {
         }
         printf("\n");
     }
+    //memory addresses & pointers
+    printf("first: %p\nsecond: %p\n", &x, &y);
+
+    int height = 21;
+    int * pHeight = &height; 
+    double temperature = 21.5;
+    double * pTemperature = &temperature; 
+
+    printf("%p\n%p\n", &height, &*pTemperature);
+
    return 0;
 };
 
